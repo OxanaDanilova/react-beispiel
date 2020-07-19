@@ -8,6 +8,45 @@
   pointer-events: none;
 }
 
+.app-wrapper {
+  width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: 
+  "h h"
+  "n c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  
+
+}
+
+.header {
+  grid-area: h;
+  background-color: mediumpurple;
+
+}
+
+.header img {
+  width: 40px;
+}
+
+.nav {
+  grid-area: n;
+  background-color: mediumseagreen;
+
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.content {
+  grid-area: c;
+  background-color: mediumvioletred;
+
+}
+
 .motiv {
   font-size: 35px;
   color: chocolate;
